@@ -1,0 +1,362 @@
+@unpublished{TC-TOCL,
+  author    = {Liron Cohen and Reuben N. S. Rowe},
+  title     = {{N}on-well-founded {P}roof {T}heory of {T}ransitive {C}losure {L}ogic},
+  year      = {2018},
+  month     = {10},
+  pdf       = {tc-journal.pdf},
+  note      = {Journal paper. In submission.}
+}
+
+@unpublished{ROTOR-ICFP,
+  author    = {Reuben N. S. Rowe and Simon J. Thompson},
+  title     = {{T}owards {L}arge-scale {R}efactoring for {O}Caml},
+  year      = {2018},
+  month     = {3},
+  pdf       = {rotor-largescale.pdf},
+  note      = {This describes the work on <a href="../software/#rotor"><span class="smallcaps">Rotor</span></a> with an emphasis on its implementation.}
+}
+
+@unpublished{NakanoTypeInf,
+  author    = {Reuben N. S. Rowe},
+  title     = {{T}ype {I}nference for {N}akano's {M}odality},
+  year      = {2016},
+  pdf       = {nakano-inference.pdf},
+  note      = {This paper collects the results from my PhD thesis on type inference for guarded recursive types.}
+}
+
+@inproceedings{TCC-IJCAR,
+  author    = {Liron Cohen and Reuben N. S. Rowe},
+  title     = {{I}ntegrating {I}nduction and {C}oinduction via {C}losure {O}perators and {P}roof {C}ycles},
+  booktitle = {Proceedings of Automated Reasoning - 10\textsuperscript{th} International Joint Conference, {IJCAR} 2020, Paris, France, June 29 – July 6, 2020},
+  venue     = {IJCAR2020},
+  year      = {2020},
+  note      = {(To appear)},
+  pdf       = {tcc-ijcar-submitted.pdf},
+  abstract  = {
+    Coinductive reasoning about infinitary data structures has many applications in computer science. Nonetheless developing natural proof systems (especially ones amenable to automation) for reasoning about coinductive data remains a challenge. This paper presents a minimal, generic formal framework that uniformly captures applicable (i.e. finitary) forms of inductive and coinductive reasoning in an intuitive manner. The logic extends transitive closure logic, a general purpose logic for inductive reasoning based on the transitive closure operator, with a dual 'co-closure' operator that similarly captures applicable coinductive reasoning in a natural, effective manner. We develop a sound and complete non-well-founded proof system for the extended logic, whose cyclic subsystem provides the basis for an effective system for automated inductive and coinductive reasoning. To demonstrate the adequacy of the framework we show that it captures the canonical coinductive data type: streams.
+  }
+}
+
+@article{HerbrandJLC,
+  author    = {Liron Cohen and Reuben N. S. Rowe and Yoni Zohar},
+  title     = {{T}owards {A}utomated {R}easoning in {H}erbrand {S}tructures},
+  journal   = {Journal of Logic and Computation},
+  volume    = {29},
+  number    = {5},
+  pages     = {693--721},
+  year      = {2019},
+  venue     = {JLC},
+  doi       = {10.1093/logcom/exz011},
+  pdf       = {herbrand-jlc.pdf},
+  abstract  = {
+    Herbrand structures have the advantage, computationally speaking, of being guided by the definability of all elements in them. A salient feature of the logics induced by them is that they internally exhibit the induction scheme, thus providing a congenial, computationally oriented framework for formal inductive reasoning. Nonetheless, their enhanced expressivity renders any effective proof system for them incomplete. Furthermore, the fact that they are not compact poses yet another proof-theoretic challenge. This paper offers several layers for coping with the inherent incompleteness and non-compactness of these logics. First, two types of infinitary proof system are introduced—one of infinite width and one of infinite height—which manipulate infinite sequents and are sound and complete for the intended semantics. The restriction of these systems to finite sequents induces a completeness result for finite entailments. Then, in search of effectiveness, two finite approximations of these systems are presented and explored. Interestingly, the approximation of the infinite-width system via an explicit induction scheme turns out to be weaker than the effective cyclic fragment of the infinite-height system.
+  }
+}
+
+@inproceedings{PDL-TABLEAUX,
+  author    = {Simon Docherty and Reuben N. S. Rowe},
+  title     = {{A} {N}on-wellfounded, {L}abelled {P}roof {S}ystem for {P}ropositional {D}ynamic {L}ogic},
+  booktitle = {Proceedings of Automated Reasoning with Analytic Tableaux and Related Methods - 28th International Conference, {TABLEAUX} 2019, London, UK, September 3–5, 2019},
+  venue     = {TABLEAUX19},
+  pages     = {335--352},
+  year      = {2019},
+  doi       = {10.1007/978-3-030-29026-9\_19},
+  pdf       = {cyclic-pdl-tableaux.pdf},
+  slides    = {cyclic-pdl-tableaux-slides.pdf},
+  abstract  = {
+    We define an infinitary labelled sequent calculus for PDL, G3PDL\textsuperscript{\infty}. A finitarily representable cyclic system, G3PDL\textsuperscript{\omega}, is then given. We show that both are sound and complete with respect to standard models of PDL and, further, that G3PDL\textsuperscript{\infty} is cut-free complete. We additionally investigate proof-search strategies in the cyclic system for the fragment of PDL without tests.
+  }
+}
+
+@techreport{PDL-Long,
+  author    = {Simon Docherty and Reuben N. S. Rowe},
+  title     = {{A} {N}on-wellfounded, {L}abelled {P}roof {S}ystem for {P}ropositional {D}ynamic {L}ogic},
+  journal   = {CoRR},
+  volume    = {abs/1905.06143},
+  year      = {2019},
+  note      = {Long version of TABLEAUX'19 paper.},
+  url       = {https://arxiv.org/abs/1905.06143},
+  pdf       = {cyclic-pdl-long.pdf},
+  abstract  = {
+    We define an infinitary labelled sequent calculus for PDL, G3PDL\textsuperscript{\infty}. A finitarily representable cyclic system, G3PDL\textsuperscript{\omega}, is then given. We show that both are sound and complete with respect to standard models of PDL and, further, that G3PDL\textsuperscript{\infty} is cut-free complete. We additionally investigate proof-search strategies in the cyclic system for the fragment of PDL without tests.
+  }
+}
+
+@inproceedings{ROTOR-PLDI,
+  author    = {Reuben N. S. Rowe and Hugo F{\'{e}}r{\'{e}}e and Simon J. Thompson and Scott Owens},
+  title     = {{C}haracterising {R}enaming {W}ithin {O}Caml's {M}odule {S}ystem: {T}heory and {I}mplementation},
+  booktitle = {Proceedings of the 40\textsuperscript{th} {ACM} {SIGPLAN} Conference on Programming Language Design and Implementation, {PLDI} 2019, Phoenix, AZ, USA, June 22–26, 2019},
+  venue     = {PLDI19},
+  pages     = {950--965},
+  year      = {2019},
+  doi       = {10.1145/3314221.3314600},
+  pdf       = {rotor-pldi.pdf},
+  slides    = {rotor-pldi-slides.pdf},
+  code      = {https://doi.org/10.5281/zenodo.2646525},
+  abstract  = {
+    We present an abstract, set-theoretic denotational semantics for a significant subset of OCaml and its module system in order to reason about the correctness of renaming value bindings. Our abstract semantics captures information about the binding structure of programs. Crucially for renaming, it also captures information about the relatedness of different declarations that is induced by the use of various different language constructs (e.g. functors, module types and module constraints). Correct renamings are precisely those that preserve this structure. We demonstrate that our semantics allows us to prove various high-level, intuitive properties of renamings. We also show that it is sound with respect to a (domain-theoretic) denotational model of the operational behaviour of programs. This formal framework has been implemented in a prototype refactoring tool for OCaml that performs renaming.
+  }
+}
+
+@inproceedings{ROTOR-IWOR,
+  author    = {Reuben N. S. Rowe and Hugo F{\'{e}}r{\'{e}}e and Simon J. Thompson and Scott Owens},
+  title     = {{R}otor: {A} {T}ool for {R}enaming {V}alues in {O}Caml's {M}odule {S}ystem},
+  booktitle = {Proceedings of the 3\textsuperscript{rd} International Workshop on Refactoring, IWOR@ICSE 2019, Montreal, QC, Canada, May 28, 2019},
+  venue     = {IWOR19},
+  pages     = {27--30},
+  year      = {2019},
+  doi       = {10.1109/IWoR.2019.00013},
+  pdf       = {rotor-iwor.pdf},
+  slides    = {rotor-iwor-slides.pdf},
+  abstract  = {
+    The functional programming paradigm presents its own unique challenges to refactoring. For the OCaml language in particular, the expressiveness of its module system makes this a highly non-trivial task and there is currently no automated support for large-scale refactoring in the OCaml language. We present \textsc{Rotor}, a tool for automatically renaming top-level value definitions in OCaml's module system. To compute the effect of renaming, \textsc{Rotor} relies on a novel concept which we call a value extension. This is a collection of related declarations in a program that must all be renamed at once. In practice, this leads to a notion of dependency: renaming a function foo in module A (mutually) depends on renaming function foo in module B etc. We describe important aspects of \textsc{Rotor}'s design, implementation, and evaluation on two large codebases: Jane Street's core library and its dependencies, and the OCaml compiler itself. In these real-world settings we find that some cases involve a surprisingly complex network of dependencies, and that the use of the PPX preprocessor system presents significant challenges.
+  }
+}
+
+@inproceedings{TC-CSL,
+  author    = {Liron Cohen and Reuben N. S. Rowe},
+  title     = {{U}niform {I}nductive {R}easoning in {T}ransitive {C}losure {L}ogic via {I}nfinite {D}escent},
+  booktitle = {Proceedings of the 27\textsuperscript{th} {EACSL} Annual Conference on Computer Science Logic, {CSL} 2018, September 4–7, 2018, Birmingham, {UK}},
+  venue     = {CSL18},
+  pages     = {17:1--17:16},
+  year      = {2018},
+  doi       = {10.4230/LIPIcs.CSL.2018.17},
+  pdf       = {cyclic-tc-csl.pdf},
+  slides    = {cyclic-tc-csl-slides.pdf},
+  abstract  = {
+    Transitive closure logic is a known extension of first-order logic obtained by introducing a transitive closure operator. While other extensions of first-order logic with inductive definitions are a priori parametrized by a set of inductive definitions, the addition of the transitive closure operator uniformly captures all finitary inductive definitions. In this paper we present an infinitary proof system for transitive closure logic which is an infinite descent-style counterpart to the existing (explicit induction) proof system for the logic. We show that, as for similar systems for first-order logic with inductive definitions, our infinitary system is complete for the standard semantics and subsumes the explicit system. Moreover, the uniformity of the transitive closure operator allows semantically meaningful complete restrictions to be defined using simple syntactic criteria. Consequently, the restriction to regular infinitary (i.e. cyclic) proofs provides the basis for an effective system for automating inductive reasoning.
+  }
+}
+
+@techreport{TC-Long,
+  author    = {Liron Cohen and Reuben N. S. Rowe},
+  title     = {{I}nfinitary and {C}yclic {P}roof {S}ystems for {T}ransitive {C}losure {L}ogic},
+  journal   = {CoRR},
+  volume    = {abs/1802.00756},
+  year      = {2018},
+  note      = {Long version of CSL'18 paper. Superseded by forthcoming journal version.},
+  url       = {https://arxiv.org/abs/1802.00756},
+  pdf       = {cyclic-tc-long.pdf},
+  abstract  = {
+    Transitive closure logic is a known extension of first-order logic obtained by introducing a transitive closure operator. While other extensions of first-order logic with inductive definitions are a priori parametrized by a set of inductive definitions, the addition of the transitive closure operator uniformly captures all finitary inductive definitions. In this paper we present an infinitary proof system for transitive closure logic which is an infinite descent-style counterpart to the existing (explicit induction) proof system for the logic. We show that, as for similar systems for first-order logic with inductive definitions, our infinitary system is complete for the standard semantics and subsumes the explicit system. Moreover, the uniformity of the transitive closure operator allows semantically meaningful complete restrictions to be defined using simple syntactic criteria. Consequently, the restriction to regular infinitary (i.e. cyclic) proofs provides the basis for an effective system for automating inductive reasoning.
+  }
+}
+
+@misc{TC-PARIS,
+  author       = {Reuben N. S. Rowe and Liron Cohen},
+  title        = {{T}ransitive {C}losure {L}ogic: {I}nfinitary and {C}yclic {P}roof {S}ystems},
+  howpublished = {Extended abstract presented at},
+  venue        = {PARIS},
+  year         = {2018},
+  month        = {7},
+  pdf          = {cyclic-tc-paris.pdf},
+  slides       = {cyclic-tc-paris-slides.pdf},
+  abstract     = {
+    We present a non-well-founded proof system for Transitive Closure (TC) logic, and also consider its subsystem of cyclic proofs. TC logic is an extension of first-order logic with an operator for forming the transitive closure of (relations induced by) arbitrary formulas, allowing it to capture all first-order definable finitary inductive definitions. While the existing, 'explicit' induction proof system is only sound for a Henkin-style semantics, the 'implicit' infinitary and cyclic systems are sound for the standard semantics. When including arithmetic, provability in the explicit and cyclic systems coincides. This mirrors a similar relationship between explicit induction and cyclic proof systems for Martin-L\"{o}f-style inductive definitions. Surprisingly, though, a construction that shows the inequivalence of these systems, with respect to particular sets of Martin-L\"{o}f productions, does not appear to work for TC logic, which has all inductive definitions available 'at once'.
+  }
+}
+
+@inproceedings{DecML-FLOPS,
+  author    = {Steven Cheung and Victor Darvariu and Dan R. Ghica and Koko Muroya and Reuben N. S. Rowe},
+  title     = {{A} {F}unctional {P}erspective on {M}achine {L}earning via {P}rogrammable {I}nduction and {A}bduction},
+  booktitle = {Proceedings of Functional and Logic Programming - 14\textsuperscript{th} International Symposium, {FLOPS} 2018, Nagoya, Japan, May 9–11, 2018},
+  venue     = {FLOPS18},
+  pages     = {84--98},
+  year      = {2018},
+  doi       = {10.1007/978-3-319-90686-7\_6},
+  pdf       = {decml-flops.pdf},
+  abstract  = {
+    We present a programming language for machine learning based on the concepts of 'induction' and 'abduction' as encountered in Peirce’s logic of science. We consider the desirable features such a language must have, and we identify the 'abductive decoupling' of parameters as a key general enabler of these features. Both an idealised abductive calculus and its implementation as a PPX extension of OCaml are presented, along with several simple examples.
+  }
+}
+
+@inproceedings{CyclicRealizability,
+  author    = {Reuben N. S. Rowe and James Brotherston},
+  title     = {{R}ealizability in {C}yclic {P}roof: {E}xtracting {O}rdering {I}nformation for {I}nfinite {D}escent},
+  booktitle = {Proceedings of Automated Reasoning with Analytic Tableaux and Related Methods - 26\textsuperscript{th} International Conference, {TABLEAUX} 2017, Bras{\'{\i}}lia, Brazil, September 25–28, 2017},
+  venue     = {TABLEAUX17},
+  pages     = {295--310},
+  year      = {2017},
+  doi       = {10.1007/978-3-319-66902-1\_18},
+  pdf       = {cyclic-realizability-tableaux.pdf},
+  slides    = {cyclic-realizability-tableaux-slides.pdf},
+  abstract  = {
+    In program verification, measures for proving the termination of programs are typically constructed using (notions of size for) the data manipulated by the program. Such data are often described by means of logical formulas. For example, the cyclic proof technique makes use of semantic approximations of inductively defined predicates to construct Fermat-style infinite descent arguments. However, logical formulas must often incorporate explicit size information (e.g. a list length parameter) in order to support inter-procedural analysis. In this paper, we show that information relating the sizes of inductively defined data can be automatically extracted from cyclic proofs of logical entailments. We characterise this information in terms of a graph-theoretic condition on proofs, and show that this condition can be encoded as a containment between weighted automata. We also show that under certain conditions this containment falls within known decidability results. Our results can be viewed as a form of realizability for cyclic proof theory.
+  }
+}
+
+@techreport{CyclicRealizability-Long,
+  author    = {Reuben N. S. Rowe and James Brotherston},
+  title     = {{S}ize {R}elationships in {A}bstract {C}yclic {E}ntailment {S}ystems},
+  journal   = {CoRR},
+  volume    = {abs/1702.03981},
+  year      = {2017},
+  url       = {https://arxiv.org/abs/1702.03981},
+  note      = {Extended and abstract presentation of the results of the TABLEAUX'17 paper.},
+  pdf       = {abstract-cyclic-realizability.pdf},
+  abstract  = {
+    A cyclic proof system generalises the standard notion of a proof as a finite tree of locally sound inferences by allowing proof objects to be potentially infinite. Regular infinite proofs can be finitely represented as graphs. To preclude spurious cyclic reasoning, cyclic proof systems come equipped with a well-founded notion of 'size' for the models that interpret their logical statements. A global soundness condition on proof objects, stated in terms of this notion of 'size', ensures that any non-well-founded paths in the proof object can be disregarded. We give an abstract definition of a subclass of such cyclic proof systems: cyclic entailment systems. In this setting, we consider the problem of comparing the size of a model when interpreted in relation to the antecedent of an entailment, with that when interpreted in relation to the consequent. Specifically, we give a further condition on proof objects which ensures that models of a given entailment are always 'smaller' when interpreted with respect to the consequent than when interpreted with respect to the antecedent. Knowledge of such relationships is useful in a program verification setting.
+  }
+}
+
+@misc{ROTOR-OCAML,
+  author       = {Reuben N. S. Rowe and Simon J. Thompson},
+  title        = {\textsc{Rotor}: {F}irst {S}teps {T}owards a {R}efactoring {T}ool for {OC}aml},
+  howpublished = {Extended abstract presented at},
+  venue        = {OCaml-Workshop-17},
+  year         = {2017},
+  month        = {9},
+  pdf          = {rotor-ocaml-workshop.pdf},
+  slides       = {rotor-ocaml-workshop-slides.pdf}
+}
+
+@inproceedings{CPP17,
+  author    = {Reuben N. S. Rowe and James Brotherston},
+  title     = {{A}utomatic {C}yclic {T}ermination {P}roofs for {R}ecursive {P}rocedures in {S}eparation {L}ogic},
+  booktitle = {Proceedings of the 6\textsuperscript{th} {ACM} {SIGPLAN} Conference on Certified Programs and Proofs, {CPP} 2017, Paris, France, January 16–17, 2017},
+  venue     = {CPP17},
+  pages     = {53--65},
+  year      = {2017},
+  doi       = {10.1145/3018610.3018623},
+  pdf       = {cyclic-verif-cpp.pdf},
+  slides    = {cyclic-verif-cpp-slides.pdf},
+  abstract  = {
+    We describe a formal verification framework and tool implementation, based upon cyclic proofs, for certifying the safe termination of imperative pointer programs with recursive procedures. Our assertions are symbolic heaps in separation logic with user defined inductive predicates; we employ explicit approximations of these predicates as our termination measures. This enables us to extend cyclic proof to programs with procedures by relating these measures across the pre- and postconditions of procedure calls.We provide an implementation of our formal proof system in the \textsc{Cyclist} theorem proving framework, and evaluate its performance on a range of examples drawn from the literature on program termination. Our implementation extends the current state-of-the-art in cyclic proof-based program verification, enabling automatic termination proofs of a larger set of programs than previously possible.
+  }
+}
+
+@misc{CYCLIST-TAPAS,
+  author       = {Reuben N. S. Rowe and James Brotherston},
+  title        = {{A}utomatic {C}yclic {T}ermination {P}roofs for {R}ecursive {P}rocedures in {S}eparation {L}ogic},
+  howpublished = {Extended abstract presented at},
+  venue        = {TAPAS-16},
+  year         = {2016},
+  month        = {9},
+  pdf          = {cyclic-verif-tapas.pdf},
+  slides       = {cyclic-verif-tapas-slides.pdf}
+}
+
+@inproceedings{SL-ModelChecking,
+  author    = {James Brotherston and Nikos Gorogiannis and Max I. Kanovich and Reuben Rowe},
+  title     = {{M}odel {C}hecking for {S}ymbolic-heap {S}eparation {L}ogic with {I}nductive {P}redicates},
+  booktitle = {Proceedings of the 43\textsuperscript{rd} Annual {ACM} {SIGPLAN-SIGACT} Symposium on Principles of Programming Languages, {POPL} 2016, St. Petersburg, FL, USA, January 20–22, 2016},
+  venue     = {POPL16},
+  pages     = {84--96},
+  year      = {2016},
+  doi       = {10.1145/2837614.2837621},
+  pdf       = {sl-model-checking.pdf},
+  slides    = {sl-model-checking-slides.pdf},
+  abstract  = {
+    We investigate the model checking problem for symbolic-heap separation logic with user-defined inductive predicates, i.e., the problem of checking that a given stack-heap memory state satisfies a given formula in this language, as arises e.g. in software testing or runtime verification. First, we show that the problem is decidable; specifically, we present a bottom-up fixed point algorithm that decides the problem and runs in exponential time in the size of the problem instance. Second, we show that, while model checking for the full language is EXPTIME-complete, the problem becomes NP-complete or PTIME-solvable when we impose natural syntactic restrictions on the schemata defining the inductive predicates. We additionally present NP and PTIME algorithms for these restricted fragments. Finally, we report on the experimental performance of our procedures on a variety of specifications extracted from programs, exercising multiple combinations of syntactic restrictions.
+  }
+}
+
+@inproceedings{EncodingSF,
+  author    = {Reuben N. S. Rowe},
+  title     = {{E}ncoding the {F}actorisation {C}alculus},
+  booktitle = {Proceedings of the Combined 22\textsuperscript{nd} International Workshop on Expressiveness in Concurrency and 12\textsuperscript{th} Workshop on Structural Operational Semantics, {EXPRESS/SOS} 2015, Madrid, Spain, 31\textsuperscript{st} August 2015},
+  venue     = {EXPRESS-SOS15},
+  pages     = {76--90},
+  year      = {2015},
+  doi       = {10.4204/EPTCS.190.6},
+  pdf       = {encoding-factorisation.pdf},
+  slides    = {encoding-factorisation-slides.pdf},
+  abstract  = {
+    Jay and Given-Wilson have recently introduced the Factorisation (or SF-) calculus as a minimal fundamental model of intensional computation. It is a combinatory calculus containing a special combinator, F, which is able to examine the internal structure of its first argument. The calculus is significant in that as well as being combinatorially complete it also exhibits the property of structural completeness, i.e. it is able to represent any function on terms definable using pattern matching on arbitrary normal forms. In particular, it admits a term that can decide the structural equality of any two arbitrary normal forms. Since SF-calculus is combinatorially complete, it is clearly at least as powerful as the more familiar and paradigmatic Turing-powerful computational models of {\lambda}-calculus and Combinatory Logic. Its relationship to these models in the converse direction is less obvious, however. Jay and Given-Wilson have suggested that SF-calculus is strictly more powerful than the aforementioned models, but a detailed study of the connections between these models is yet to be undertaken. This paper begins to bridge that gap by presenting a faithful encoding of the Factorisation Calculus into the {\lambda}-calculus preserving both reduction and strong normalisation. The existence of such an encoding is a new result. It also suggests that there is, in some sense, an equivalence between the former model and the latter. We discuss to what extent our result constitutes an equivalence by considering it in the context of some previously defined frameworks for comparing computational power and expressiveness.
+  }
+}
+
+@article{FJ-TCS,
+  author    = {Reuben N. S. Rowe and Steffen {van Bakel}},
+  title     = {{S}emantic {T}ypes and {A}pproximation for {F}eatherweight {J}ava},
+  journal   = {Theoretical Computer Science},
+  venue     = {TCS},
+  volume    = {517},
+  pages     = {34--74},
+  year      = {2014},
+  doi       = {10.1016/j.tcs.2013.08.017},
+  pdf       = {fj-tcs.pdf},
+  abstract  = {
+    We consider semantics for the class-based object-oriented calculus Featherweight Java based upon approximation. We also define an intersection type assignment systems for this calculus and show that it is sound and complete, i.e. types are preserved under conversion. We establish the link with between type assignment and the approximation semantics by showing an approximation result, which leads to a sufficient condition for head-normalisation and termination. We show the expressivity of our predicate system by defining an encoding of Combinatory Logic into our calculus. We show that this encoding preserves predicate-ability and also that our system characterises the normalising and strongly normalising terms for this encoding. We thus demonstrate that the great analytic capabilities of intersection types can be applied to the context of class-based object orientation.
+  }
+}
+
+@phdthesis{PhDThesis,
+  author    = {Reuben N. S. Rowe},
+  title     = {{S}emantic {T}ypes for {C}lass-based {O}bjects},
+  school    = {Imperial College London, {UK}},
+  year      = {2013},
+  url       = {http://ethos.bl.uk/OrderDetails.do?uin=uk.bl.ethos.572268},
+  pdf       = {phd-thesis.pdf},
+  abstract  = {
+    We investigate semantics-based type assignment for class-based object-oriented programming. Our motivation is developing a theoretical basis for practical, expressive, type-based analysis of the functional behaviour of object-oriented programs. We focus our research using Featherweight Java, studying two notions of type assignment: one using intersection types, the other a 'logical' restriction of recursive types. We extend to the object-oriented setting some existing results for intersection type systems. In doing so, we contribute to the study of denotational semantics for object-oriented languages. We define a model for Featherweight Java based on approximation, which we relate to our intersection type system via an Approximation Result, proved using a notion of reduction on typing derivations that we show to be strongly normalising. We consider restrictions of our system for which type assignment is decidable, observing that the implicit recursion present in the class mechanism is a limiting factor in making practical use of the expressive power of intersection types. To overcome this, we consider type assignment based on recursive types. Such types traditionally suffer from the inability to characterise convergence, a key element of our approach. To obtain a semantic system of recursive types for Featherweight Java we study Nakano's systems, whose key feature is an approximation modality which leads to a 'logical' system expressing both functional behaviour and convergence. For Nakano's system, we consider the open problem of type inference. We introduce insertion variables (similar to the expansion variables of Kfoury and Wells), which allow to infer when the approximation modality is required. We define a type inference procedure, and conjecture its soundness based on a technique of Cardone and Coppo. Finally, we consider how Nakano's approach may be applied to Featherweight Java and discuss how intersection and logical recursive types may be brought together into a single system.
+  }
+}
+
+@misc{FJ-Festschrift,
+  author    = {Steffen {van Bakel} and Reuben N. S. Rowe},
+  title     = {{F}unctional {T}ype {A}ssignment for {F}eatherweight {J}ava},
+  booktitle = {The Beauty of Functional Code - Essays Dedicated to Rinus Plasmeijer on the Occasion of His 61st Birthday},
+  pages     = {27--46},
+  year      = {2013},
+  doi       = {10.1007/978-3-642-40355-2\_4},
+  abstract  = {
+    We consider functional type assignment for the class-based object-oriented calculus Featherweight Java. We start with an intersection type assignment system for this calculus for which types are preserved under conversion. We then define a variant for which type assignment is decidable, and define a notion of unification as well as a principal typing algorithm. We show the expressivity of both our calculus and our type system by defining an encoding of Combinatory Logic into our calculus and showing that this encoding preserves typeability. We thus demonstrate that the great capabilities of functional types can be applied to the context of class-based object orientated programming.
+  }
+}
+
+@inproceedings{ICCSW,
+  author    = {Reuben N. S. Rowe},
+  title     = {{S}afe, {F}lexible {R}ecursive {T}ypes for {F}eatherweight {J}ava},
+  booktitle = {Proceedings of the 2011 Imperial College Computing Student Workshop, {ICCSW} 2011, London, United Kingdom, September 29–30, 2011},
+  venue     = {ICCSW11},
+  pages     = {80--86},
+  year      = {2011},
+  url       = {http://www.doc.ic.ac.uk/research/technicalreports/2011/\#9},
+  pdf       = {fj-iccsw.pdf},
+  slides    = {fj-iccsw-slides.pdf},
+  abstract  = {
+    This paper presents a type assignment system with recursive types for Featherweight Java, inspired by the work of Nakano. Nakano's innovation consists in adding a modal type constructor which acts to control the folding of recursive types, resulting in a head-normalisation guarantee. We build on this approach by introducing a second modal type constructor which prevents the unfolding of types in contexts where doing so results in non-termination. Moreover our system inherits the flexibility of Nakano's approach, allowing object-oriented features (such as binary methods) to be typed in a safe and intuitive way. The work described in this paper is preliminary, and no formal results are claimed. However, we conjecture that our type system enjoys strong normalisation and we motivate this by working through some apposite examples.
+  }
+}
+
+@inproceedings{FJ-TLCA,
+  author    = {Reuben N. S. Rowe and Steffen {van Bakel}},
+  title     = {{A}pproximation {S}emantics and {E}xpressive {P}redicate {A}ssignment for {O}bject-{O}riented {P}rogramming - ({E}xtended {A}bstract)},
+  booktitle = {Proceedings of Typed Lambda Calculi and Applications - 10th International Conference, {TLCA} 2011, Novi Sad, Serbia, June 1–3, 2011},
+  venue     = {TLCA11},
+  pages     = {229--244},
+  year      = {2011},
+  doi       = {10.1007/978-3-642-21691-6\_19},
+  pdf       = {fj-tlca.pdf},
+  slides    = {fj-tlca-slides.pdf},
+  abstract  = {
+    We consider a semantics for a class-based object-oriented calculus based upon approximation; since in the context of \textsc{lc} such a semantics enjoys a strong correspondence with intersection type assignment systems, we also define such a system for our calculus and show that it is sound and complete. We establish the link with between type (we use the terminology predicate here) assignment and the approximation semantics by showing an approximation result, which leads to a sufficient condition for head-normalisation and termination. We show the expressivity of our predicate system by defining an encoding of Combinatory Logic (and so also \textsc{lc}) into our calculus. We show that this encoding preserves predicate-ability and also that our system characterises the normalising and strongly normalising terms for this encoding, demonstrating that the great analytic capabilities of these predicates can be applied to \textsc{oo}.
+  }
+}
+
+@inproceedings{FJ-FTfJP,
+  author    = {Steffen {van Bakel} and Reuben N. S. Rowe},
+  title     = {{S}emantic {P}redicate {T}ypes and {A}pproximation for {C}lass-based {O}bject-oriented {P}rogramming},
+  booktitle = {Proceedings of the 11th International Workshop on Formal Techniques for Java-like Programs, FTfJP 2009, Genova, Italy, July 6, 2009},
+  venue     = {FTfJP09},
+  pages     = {3:1--3:7},
+  year      = {2009},
+  doi       = {10.1145/1557898.1557901},
+  pdf       = {fj-ftfjp.pdf},
+  slides    = {fj-ftfjp-slides.pdf},
+  abstract  = {
+    We apply the principles of the intersection type discipline to the study of class-based object oriented programs and argue that program analysis systems can be built around this. Our work follows from a similar approach (in the context of Abadi and Cardelli's Varsigma object calculus) taken by van Bakel and de'Liguoro. We define an extension of Featherweight Java, pFJ, and present a \emph{predicate} system which we show to be sound and expressive. We also show that our system provides a semantic underpinning for the object oriented paradigm by generalising the concept of \emph{approximant} from the Lambda Calculus and demonstrating an approximation result: all expressions to which we can assign a predicate have an approximant that satisfies the same predicate. Crucial to this result is the notion of \emph{predicate language}, which associates a family of predicates with a class.
+  }
+}
+
+@mastersthesis{MScDissertation,
+  author    = {Reuben N. S. Rowe},
+  title     = {{I}ntersection {T}ypes for {C}lass-based {O}bject {O}riented {P}rogramming},
+  school    = {Imperial College London, {UK}},
+  year      = {2008},
+  pdf       = {msc-dissertation.pdf},
+  abstract  = {
+    Intersection type systems have been well studied in the context of the Lambda Calculus and functional programming over the last quarter of a century or so. Recently, the principles of intersection types have been successfully applied in an \emph{object oriented} context. This work was done using the &varsigma; object calculus of Abadi and Cardelli, however we note that this calculus leans more towards the \emph{object-based} approach to object orientation, and wish to investigate how intersection types interact with a quintessentially \emph{class-based} approach. In order to do this, we define a small functional calculus that expresses class-based object oriented features and is modelled on the similar calculi of Featherweight Java and Middleweight Java, which are ultimately based upon the Java programming language. We define a \emph{predicate} system, similar to the one defined by van Bakel and de'Liguoro, and show subject reduction and expansion. We discuss the implications that this has for the characterisation of expressions in our calculus, and define a restriction of the predicate system which we informally argue is decidable.
+  }
+}

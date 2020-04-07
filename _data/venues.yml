@@ -1,0 +1,76 @@
+# Conferences
+CPP17:
+  url: "http://cpp2017.mpi-sws.org/"
+CSL18:
+  url: "http://events.cs.bham.ac.uk/csl18/"
+EXPRESS-SOS15:
+  url: "https://www.math.unipd.it/~crafa/EXPRESSSOS2015/"
+FLOPS18:
+  url: "http://www.sqlab.jp/FLOPS2018/"
+FTfJP09:
+  url: "http://software.imdea.org/~ab/FTfJP09/ftfjp09.html"
+ICCSW11:
+  url: "http://iccsw.doc.ic.ac.uk/2011/"
+IJCAR2020:
+  url: "https://ijcar2020.org/"
+IWOR19:
+  url: "https://iwor.github.io/iwor2019/"
+POPL16:
+  url: "https://popl16.sigplan.org/"
+PLDI19:
+  url: "https://pldi19.sigplan.org/"
+TABLEAUX17:
+  url: "http://tableaux2017.cic.unb.br/"
+TABLEAUX19:
+  url: "https://tableaux2019.org/"
+TLCA11:
+  url: "http://www.rdp2011.uns.ac.rs/tlca/"
+# Journals
+JLC:
+  url: "https://academic.oup.com/logcom"
+TCS:
+  url: "https://www.journals.elsevier.com/theoretical-computer-science"
+# Presentations without Publication
+PARIS:
+  name: "Programming And Reasoning on Infinite Structures (PARIS) - A Workshop Affiliated with FSCD@FLOC 2018, July 7–8, 2018, Oxford, UK"
+  url:  "https://www.irif.fr/~saurin/RAPIDO/PARIS-2018/"
+OCaml-Workshop-17:
+  name: "The OCaml Users and Developers Workshop, Oxford, UK, September 8<sup>th</sup>, 2017"
+  url:  "https://ocaml.org/meetings/ocaml/2017/"
+TAPAS-16:
+  name: "The Seventh Workshop on Tools for Automatic Program Analysis (TAPAS 2016), Edinburgh, UK, September 7<sup>th</sup>, 2016"
+  url:  "http://staticanalysis.org/tapas2016/"
+# Talks
+BhamTCS:
+  name: "Theoretical Computer Science Seminar, University of Birmingham"
+  url:  "http://talks.bham.ac.uk/show/archive/86"
+CamPRG:
+  name: "Programming Research Group Seminar, University of Cambridge"
+  url:  "https://talks.cam.ac.uk/show/archive/8677"
+Cornell-PLSeminar:
+  name: "Cornell University, Programming Languages Seminar"
+  url:  "https://pl.cs.cornell.edu/pldg/"
+Delft-PLSeminar:
+  name: "TU Delft Programming Languages Seminar"
+  url:  "https://pl.ewi.tudelft.nl/seminar/"
+KentPLAS:
+  name: "University of Kent, PLAS Research Group Seminar"
+  url:  "https://www.cs.kent.ac.uk/research/groups/plas/seminarcalendar.html?tag=plas&view_by=upcoming"
+QMUL-JTS:
+  name: "Queen Mary University of London, Joint Theory Seminar"
+  url:  "https://theory.eecs.qmul.ac.uk/seminars/"
+RR:
+  name: "Resource Reasoning Project Meeting, UCL"
+  url:  "https://www.resourcereasoning.com/news/2015/04/rr-meeting.html"
+SREPLS10:
+  name: "10<sup>th</sup> South of England Regional Programming Language Seminar (Birkbeck)"
+  url:  "http://www.dcs.bbk.ac.uk/~carsten/srepls10/"
+UCL-CyclicProof-RG:
+  name: "UCL PPLV Cyclic Proof Reading Group"
+UCL-PPLV:
+  name: "UCL, PPLV Research Group Seminar"
+  url:  "http://pplv.cs.ucl.ac.uk/pplv_research_seminar/"
+WAIT2:
+  name: "Second Workshop on Automated Inductive Theorem Proving, Chalmers University"
+  url:  "http://www.cse.chalmers.se/~nicsma/induction/"
+  

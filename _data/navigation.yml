@@ -1,0 +1,13 @@
+main:
+  - title: "cv"
+    url: "/assets/pdf/cv.pdf"
+  - title: "research"
+    url: "/research/"
+  - title: "publications"
+    url: "/publications/"
+  - title: "activities"
+    url: "/activities/"
+  - title: "teaching"
+    url: "/teaching/"
+  - title: "software"
+    url: "/software/"

@@ -1,0 +1,156 @@
+# -----------------------------------------------------------------------------
+# Site settings
+# -----------------------------------------------------------------------------
+
+name: Reuben N. S. Rowe
+email: reuben.rowe@rhul.ac.uk
+description: > # this means to ignore newlines until "url:"
+  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+footer_text: >
+  <br/>
+  Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a>
+  with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
+  Icons provided by
+    <a href="https://fontawesome.com/" target="_blank">Font Awesome</a>,
+    <a href="https://jpswalsh.github.io/academicons/" target="_blank">AcademIcons</a> and
+    <a href="https://icons8.com" target="_blank">Icons8</a>.
+#  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+#  Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
+
+url:  # the base hostname & protocol for your site
+baseurl: /al-folio # the subpath of your site, e.g. /blog/
+last_updated: Saturday 4 April 2020
+
+# -----------------------------------------------------------------------------
+# Open Graph
+# -----------------------------------------------------------------------------
+# Display links to the page with a preview object on social media.
+# To achieve this, change serve_og_meta to true and then provide the URL of the
+# preview image as the value of og_image.
+
+serve_og_meta: false # Include Open Graph meta tags in the HTML head
+og_image: # The site-wide (default for all links) Open Graph preview image
+
+# -----------------------------------------------------------------------------
+# Social integration
+# -----------------------------------------------------------------------------
+
+github_username: reubenrowe
+twitter_username: # your Twitter handle
+linkedin_username: reuben-rowe-975099185
+orcid_id: 0000-0002-4271-9078
+scholar_userid: 7jBLbSsAAAAJ
+dblp_id: 46/9730
+medium_username: # your Medium username
+quora_username: # your Quora username
+publons_id: 3496134
+research_gate_profile: Reuben_Rowe
+blogger_url: # your blogger URL
+
+#contact_note: >
+#  Please contact me via email: reuben dot rowe at rhul dot ac dot uk.
+
+google_analytics: #UA-XXXXXXXXX # out your google-analytics code
+
+# -----------------------------------------------------------------------------
+# Blog
+# -----------------------------------------------------------------------------
+blog_name: al-folio
+blog_description: a simple whitespace theme for academics
+
+# Pagination
+paginate: 4
+permalink: /blog/:year/:title/
+paginate_path: /blog/page:num/
+
+text:
+  pagination:
+    newer: 'Newer'
+    older: 'Older'
+
+# Comments
+disqus_shortname: al-folio # put your disqus shortname
+
+# Optional features
+show_social_icons:  false
+enable_anchorjs:    false
+enable_katex:       true
+
+# -----------------------------------------------------------------------------
+# Collections
+# -----------------------------------------------------------------------------
+
+collections:
+  news:
+    defaults:
+      layout: post
+    output: true
+    permalink: /news/:path/
+  projects:
+    output: true
+    permalink: /projects/:path/
+
+news_limit: 5
+
+files_dir: /assets/files/
+
+# -----------------------------------------------------------------------------
+# Publications settings
+# -----------------------------------------------------------------------------
+
+publications:
+  start_year: 2009 # The year that your publication record begins
+  new_items: ["TCC-IJCAR", "TC-TOCL"] # Put the bibliography keys of new items here
+  
+# -----------------------------------------------------------------------------
+# Jekyll settings
+# -----------------------------------------------------------------------------
+
+# Build settings
+theme: al-folio
+markdown: kramdown
+highlighter: rouge
+
+# Includes & excludes
+include: ['_pages']
+exclude: [vendor]
+
+# Plug-ins
+plugins:
+    - jekyll-email-protect
+    - jekyll-paginate
+    - jekyll/scholar
+    - jemoji
+
+# Jekyll-Scholar
+scholar:
+
+  last_name: Rowe
+
+  style: apa
+  locale: en
+
+  sort_by: year
+  order: descending
+  #group_by: type
+
+  source: /_bibliography/
+  bibliography: papers.bib
+  bibliography_template: bib
+
+  replace_strings: true
+  join_strings: true
+
+  details_dir: bibliography
+  details_layout: bibtex.html
+  details_link: Details
+
+  query: "@*"
+
+# -----------------------------------------------------------------------------
+# Other settings
+# -----------------------------------------------------------------------------
+jquery_version: "1.12.4"
+katex_version: "0.9.0"
+anchorjs_version: "3.2.2"
+
