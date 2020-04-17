@@ -3,10 +3,7 @@ layout: about
 permalink: /
 title: Reuben N. S. Rowe
 description: >
-  Lecturer,
-  Royal Holloway, University of London,
-  Egham, Surrey
-  TW20 0EX.
+  &quot;<a href="https://www.quantamagazine.org/computer-scientist-donald-knuth-cant-stop-telling-stories-20200416/">In most of life, you can bluff, but not with computers</a>&quot; &mdash; Donald Knuth
 
 profile:
   align: right
